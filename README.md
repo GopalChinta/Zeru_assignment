@@ -1,8 +1,21 @@
-Here’s a clean and professional `README.md` file for your **EigenLayer Restaking Info API** project. This covers setup, features, technologies used, and usage instructions:
+//// FILE: package.json
+{
+  "name": "eigenlayer-restake-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "graphql-request": "^6.1.0",
+    "dotenv": "^16.3.1"
+  }
+}
 
----
-
-```markdown
+//// FILE: README.md
 # 🛠️ EigenLayer Restaking Info API
 
 This project is a Node.js backend service that fetches and exposes **restaking data** from **EigenLayer** using **The Graph Protocol**. It provides clean REST API endpoints for:
@@ -10,7 +23,7 @@ This project is a Node.js backend service that fetches and exposes **restaking d
 - ✅ User restaking info
 - ✅ Validator metadata (including slash history and status)
 
-> 📆 Submission-Ready: Includes `.env` setup, GraphQL integration, and demo endpoints tested via Postman.
+> 🗖 Submission-Ready: Includes `.env` setup, GraphQL integration, and demo endpoints tested via Postman.
 
 ---
 
@@ -24,7 +37,7 @@ This project is a Node.js backend service that fetches and exposes **restaking d
 
 ---
 
-## 📦 Technologies Used
+## 📆 Technologies Used
 
 | Tech         | Purpose                    |
 |--------------|----------------------------|
@@ -39,7 +52,6 @@ This project is a Node.js backend service that fetches and exposes **restaking d
 ## 📁 Folder Structure
 
 ```
-
 eigenlayer-restake-api/
 ├── api/                  # Express routes
 │   ├── users.js
@@ -52,8 +64,7 @@ eigenlayer-restake-api/
 ├── .env                  # Environment config (GraphQL endpoint)
 ├── app.js                # Entry point
 ├── package.json          # Dependencies & scripts
-
-````
+```
 
 ---
 
@@ -61,18 +72,16 @@ eigenlayer-restake-api/
 
 ### 1. Clone the Repository
 ```bash
-https://github.com/GopalChinta/Zeru_assignment
+git clone https://github.com/GopalChinta/Zeru_assignment
 cd eigenlayer-restake-api
-````
+```
 
 ### 2. Install Dependencies
-
 ```bash
 npm install
 ```
 
 ### 3. Create `.env` File
-
 Create a `.env` file in the root folder with:
 
 ```
@@ -81,15 +90,13 @@ GRAPH_ENDPOINT=https://api.thegraph.com/subgraphs/id/68g9WSC4QTUJmMpuSbgLNENrcYh
 ```
 
 ### 4. Run the Server
-
 ```bash
 npm start
 ```
 
 Expected output:
-
 ```
-✅ Server running on http://localhost:3000
+📅 Server running on http://localhost:3000
 ```
 
 ---
@@ -97,9 +104,7 @@ Expected output:
 ## 📡 API Endpoints
 
 ### `GET /api/restaking/users`
-
 Returns list of users who restaked stETH:
-
 ```json
 [
   {
@@ -110,12 +115,8 @@ Returns list of users who restaked stETH:
 ]
 ```
 
----
-
 ### `GET /api/restaking/validators`
-
 Returns validator metadata:
-
 ```json
 [
   {
@@ -137,16 +138,16 @@ Returns validator metadata:
 
 ## 🎥 Demo
 
-> 📹 [Watch Demo Video on Google Drive](https://drive.google.com/...)
-> (Uploaded and set to “Anyone with the link can view”)
+> 📹 [Watch Demo Video on Google Drive](https://drive.google.com/...)  
+(Uploaded and set to “Anyone with the link can view”)
 
 ---
 
 ## 🧠 Notes
 
-* No database is required (data comes directly from on-chain subgraph)
-* Easily extendable for caching or frontend consumption
-* Developed for an assignment on EigenLayer integration
+- No database is required (data comes directly from on-chain subgraph)
+- Easily extendable for caching or frontend consumption
+- Developed for an assignment on EigenLayer integration
 
 ---
 
@@ -156,11 +157,5 @@ MIT License. Use freely for educational or portfolio purposes.
 
 ---
 
-### 👨‍💻 Built by \[Your Name]
+### 👨‍💻 Built by GopalChinta
 
-```
-
----
-
-Would you like this as a downloadable file? Or want me to auto-generate a `README.md` and include it in your project structure?
-```

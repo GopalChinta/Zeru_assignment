@@ -1,20 +1,3 @@
-//// FILE: package.json
-{
-  "name": "eigenlayer-restake-api",
-  "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "axios": "^1.6.7",
-    "express": "^4.18.2",
-    "graphql-request": "^6.1.0",
-    "dotenv": "^16.3.1"
-  }
-}
-
 //// FILE: README.md
 # 🛠️ EigenLayer Restaking Info API
 

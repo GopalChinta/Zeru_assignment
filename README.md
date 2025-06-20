@@ -61,7 +61,7 @@ eigenlayer-restake-api/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/random-api-name.git
+https://github.com/GopalChinta/Zeru_assignment
 cd eigenlayer-restake-api
 ````
 
